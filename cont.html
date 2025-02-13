@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact/School</title>
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light and Dark Themes */
+body.light-theme {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Theme Switcher Button */
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0077b6;
+}
+
+.site-header .logo img {
+    max-width: 150px;
+}
+
+.site-nav ul {
+    list-style-type: none;
+}
+
+.site-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.site-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0077b6;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-us .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0077b6;
+    color: white;
+}
+
+.img1{
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero button {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="theme-switcher">
+        <button id="theme-toggle">🌙</button>
+    </div>
+    
+    <header class="site-header">
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="pro.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Contacting Us</h1>
+            <p>Contact Us By The Following Options</p>
+            <br>
+            <p><strong>E-Mail Option - (This Option Is Coming Soon)</strong></p>
+            <p><strong>WhatsApp Group - <a href="">WhatsApp Group Join Link</a></strong></p>
+            <p><strong>Phone Number - (+91 89281 04747)</strong></p>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <h2>Contact US</h2>
+            <p>You Can Contact Us Using The Phone Number.</p>
+            <br>
+            <p>The Phone Number of The Teacher was published by their permission.</p>
+            <p><strong>The teacher was mr'Sadashiv Shelar Sir'</strong></p> 
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; Z.P.Pri School Chinchani. All Rights Resorved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
